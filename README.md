@@ -12,7 +12,7 @@ The app uses two files as input.
 3. preferences.txt
    This file defines certain preferences among the players and their impact on the team strength. If player A and player B play very well together, the overall team strength is increased by a certain amount. Also this file is in CSV format.
    
-   `Name 1, Name 2, additional strength`
+   `Player A, Player B, additional strength`
    
    The docs directory contains an example preferences.txt file.
 

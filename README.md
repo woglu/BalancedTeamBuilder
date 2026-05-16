@@ -12,4 +12,6 @@ The app uses two files as input.
 
 The app can create 2 or more teams.
 
+See docs/help.html for detailed instructions on how to use the app.
+
 Author: Wolfgang.Glunz@gmx.de with the help of Google Antigravity

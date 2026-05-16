@@ -352,6 +352,76 @@ h2 {
     box-shadow: 0 0 0 2px var(--accent-glow);
 }
 
+/* Preferences Section */
+.preferences-section {
+    margin-bottom: 2rem;
+}
+
+.preferences-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.preferences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.preferences-grid::-webkit-scrollbar {
+    width: 6px;
+}
+.preferences-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+.preferences-grid::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+.preferences-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+.pref-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pref-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pref-names {
+    font-weight: 500;
+    color: var(--success);
+}
+
+.pref-strength-edit {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.pref-strength-edit label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
 /* Action Bar */
 .action-bar {
     display: flex;

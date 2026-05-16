@@ -114,6 +114,7 @@ function checkFilesLoaded() {
     if (playersData.length > 0) {
         loadFilesBtn.disabled = false;
         renderPlayers();
+        renderPreferences();
     }
 }
 
@@ -208,6 +209,36 @@ function renderPlayers() {
         });
         
         playersContainer.appendChild(card);
+    });
+}
+
+function renderPreferences() {
+    const prefsContainer = document.getElementById('preferences-container');
+    if (!prefsContainer) return;
+    prefsContainer.innerHTML = '';
+    
+    preferencesData.forEach((pref) => {
+        const card = document.createElement('div');
+        card.className = 'pref-card';
+        card.innerHTML = `
+            <div class="pref-info">
+                <span class="pref-names">${pref.p1} &amp; ${pref.p2}</span>
+                <div class="pref-strength-edit">
+                    <label>Bonus:</label>
+                    <input type="number" class="strength-input" value="${pref.bonus}" step="0.5">
+                </div>
+            </div>
+        `;
+        
+        const strengthInput = card.querySelector('.strength-input');
+        strengthInput.addEventListener('change', (e) => {
+            const newBonus = parseFloat(e.target.value);
+            if (!isNaN(newBonus)) {
+                pref.bonus = newBonus;
+            }
+        });
+        
+        prefsContainer.appendChild(card);
     });
 }
 

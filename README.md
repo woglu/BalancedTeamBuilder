@@ -7,7 +7,7 @@ The app uses two files as input.
    Name , strength, comment
    The docs directory contains an example player.txt file
 
-3. preferences.txt
+2. preferences.txt
    This file defines certain preferences among the players and their impact on the team strength. If player A and player B play very well together, the overall team strength is increased by a certain amount. Also this file is in CSV format.
    Name 1, Name 2, additional strength
    The docs directory contains and example preferences.txt file.
@@ -15,5 +15,7 @@ The app uses two files as input.
 The app can create 2 or more teams.
 
 See docs/help.html for detailed instructions on how to use the app.
+
+The app is also online at https://woglu.github.io/BalancedTeamBuilder 
 
 Author: Wolfgang Glunz with the help of Google Antigravity

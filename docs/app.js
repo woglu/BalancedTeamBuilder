@@ -225,7 +225,7 @@ function renderPreferences() {
                 <span class="pref-names">${pref.p1} &amp; ${pref.p2}</span>
                 <div class="pref-strength-edit">
                     <label>Bonus:</label>
-                    <input type="number" class="strength-input" value="${pref.bonus}" step="0.5">
+                    <input type="number" class="strength-input" value="${pref.bonus}" step="1">
                 </div>
             </div>
         `;

@@ -178,7 +178,7 @@ function renderPlayers() {
                 <span class="player-name">${player.name}</span>
                 <div class="player-strength-edit">
                     <label>Strength:</label>
-                    <input type="number" class="strength-input" value="${player.strength}" step="0.5" min="1" max="20">
+                    <input type="number" class="strength-input" value="${player.strength}" step="1" min="1" max="100">
                 </div>
             </div>
         `;
@@ -379,8 +379,8 @@ function evaluatePartition(partition, prefs) {
         const bonuses = [];
         
         for (const pref of prefs) {
-            const p1InTeam = team.some(p => p.name === pref.p1 || p.comment === pref.p1);
-            const p2InTeam = team.some(p => p.name === pref.p2 || p.comment === pref.p2);
+            const p1InTeam = team.some(p => p.name === pref.p1 );
+            const p2InTeam = team.some(p => p.name === pref.p2 );
             if (p1InTeam && p2InTeam) {
                 sum += pref.bonus;
                 bonuses.push(pref);

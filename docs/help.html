@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Builder App Help</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        p { line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <h1>Team Builder App Help</h1>
+    <p>This web-hosted app helps you build balanced teams of players based on their strengths and preferences.</p>
+
+    <h2>Overview</h2>
+    <p>The app reads player data from a file named <code>players.txt</code> and preferences from <code>preferences.txt</code>. 
+       Then it allows you to select players, specify the number of teams, and generates balanced team combinations.</p>
+       Preferences between players are taken into account, giving a bonus to the strength of teams that include preferred pairs. 
+        Preferences represent additional strength because two players harmonize well together ("Robbery effect").
+    </p>
+    <p>The app aims for the best balance in team strengths, considering preferences for bonuses.</p>
+
+    <h2>Player Data</h2>
+    <ul>
+        <li>Players are loaded from <code>players.txt</code>, which is in CSV format: <code>Player Name, Strength, Comment</code>.</li>
+        <li>Strength is a value between 1 and 100.</li>
+        <li>You can adjust player strengths in the selection dialog. However, changes will not be saved back to the file</li>
+    </ul>
+
+    <h2>Preferences</h2>
+    <ul>
+        <li>Preferences are loaded from <code>preferences.txt</code>.</li>
+        <li>Also preferences are stored in CSV format: <code>Player1, Player2, Bonus</code>.</li>
+        <li>This file defines pairs of players who prefer to play together, with an additional strength bonus added if 
+            they are on the same team.</li>
+        <li>In solutions, these pairs are emphasized.</li>
+    </ul>
+
+    <h2>Using the App</h2>
+    <ol>
+        <li>Load you own <code>players.txt</code> and <code>preferences.txt</code> or use the files from the web server.</li>
+        <li>Select the players you want to include in team building.</li>
+        <li>Specify the number of teams to build.</li>
+        <li>The app will generate team combinations where the sum of strengths per team is as balanced as possible.</li>
+        <li>Browse through different solutions. Permutations of previous solutions are not shown.</li>
+        <li>Solutions where any team's strength sum differs by more than 10% from the average are suppressed.</li>
+    </ol>
+
+    <h2>Balancing Algorithm</h2>
+    For smaller groups of players (<= 12), the algorithm exhaustively evaluates all possible non-empty partitions of the 
+    selected players into $K$ teams. For larger groups, it uses a randomized sampling search to find optimal solutions without 
+    freezing the browser.
+
+    For each partition, it calculates the sum of player strengths and adds the synergy bonus for any preferred pairs that 
+    end up on the same team. It then calculates the "Strength Difference" (variance) across the teams.
+
+    The solutions are sorted so the most balanced partitions appear first. 
+    Team compositions are internally stringified to automatically deduplicate solutions that are just permutations of one another.
+
+    <h2>Author</h2>
+    <p>This app was created by W. Glunz using Google anti-gravity technology.</p>
+</body>
+</html>

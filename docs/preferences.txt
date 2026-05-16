@@ -1,0 +1,10 @@
+WG, MB, 5
+KH, MB, 5
+MW, MB, 2
+WG, MN, 3
+OZ, MN, 2
+HC, MN, 1
+MN, KN, 4
+TN, KN, 1
+ROR, RR, 5
+MN, RR , 2

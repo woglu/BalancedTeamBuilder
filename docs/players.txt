@@ -1,22 +1,22 @@
-BB, 100, Basti
-ROR, 100, Robert R.
-OZ, 95,  Oleg
-MB, 90,  Mark
-RR, 80,  Roland R.
-CS, 80,  Christian Spanner
-CK, 80,  Christoph Kaindl
-TR, 70,  Thomas Reisky
-WG, 70,  Wolfgang 
-MM, 70,  Martin
-MN, 70,  Matthias Neher
-KN, 70,  Konsti Neher
-HC, 65,  Helmut
-RT, 60,  Robert Templeton
-BS, 60,  Bernhard Stadler
-KH, 60,  Kathrin
-CG, 55,  Christian Gruber
-KB, 50,  Karlheinz
-MW, 50,  Matthias Werner
-DK, 40,  Detlef
-TN, 30,  Theresa Neher
-PS, 30,  Peter Sandgathe
+BB, 100, Basti B.
+RBR, 100, Robert R.
+OZ, 95,  Oleg Z.
+MB, 90,  Mark B.
+RLR, 80,  Roland R.
+CS, 80,  Christian S.
+CK, 80,  Christoph K.
+TR, 70,  Thomas R.
+WG, 70,  Wolfgang G.
+MM, 70,  Martin M.
+MN, 70,  Matthias N.
+KN, 70,  Konsti N.
+HC, 65,  Helmut C.
+RT, 60,  Robert T.
+BS, 60,  Bernhard S.
+KH, 60,  Kathrin H.
+CG, 55,  Christian G.
+KB, 50,  Karlheinz B.
+MW, 50,  Matthias W.
+DK, 40,  Detlef K.
+TN, 30,  Theresa N.
+PS, 30,  Peter S.

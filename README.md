@@ -14,4 +14,4 @@ The app can create 2 or more teams.
 
 See docs/help.html for detailed instructions on how to use the app.
 
-Author: Wolfgang.Glunz@gmx.de with the help of Google Antigravity
+Author: Wolfgang Glunz with the help of Google Antigravity

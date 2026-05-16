@@ -18,8 +18,10 @@ The app uses two files as input.
 
 The app can create 2 or more teams.
 
-See docs/help.html for detailed instructions on how to use the app.
+See docs/help.html for more details on algorithm and usage.
 
-The app is also online at https://woglu.github.io/BalancedTeamBuilder 
+## Usage 
+Open https://woglu.github.io/BalancedTeamBuilder in your browser, or clone the repo and open docs/index.html locally — no build step required.
 
-Author: Wolfgang Glunz with the help of Google Antigravity
+## Author
+Wolfgang Glunz (AI-assisted)

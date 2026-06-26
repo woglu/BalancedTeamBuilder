@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 20px;
+    background: #f3f3f3;
+    color: #222;
+}
+h1 {
+    color: #207ab7;
+}
+section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.03);
+    margin-bottom: 24px;
+    padding: 20px 25px 10px 25px;
+}
+input[type="number"] {
+    width: 60px;
+}
+label {
+    font-weight: 500;
+}
+#solutions-container {
+    margin-top: 18px;
+}
+.team {
+    margin-bottom: 14px;
+    padding: 8px 12px;
+    border-left: 5px solid #207ab7;
+    background: #eef;
+    border-radius: 4px;
+}
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.player strong {
+    min-width: 85px;
+    display: inline-block;
+}
+.preference {
+    color: #168c28;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 4px;
+    padding: 0 3px;
+    border-radius: 3px;
+    background: #def6df;
+}
+#help-link {
+    text-align: right;
+    margin-bottom: 16px;
+}
+#preferences-list {
+    margin-bottom: 16px;
+}

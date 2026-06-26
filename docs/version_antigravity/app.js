@@ -121,8 +121,8 @@ function checkFilesLoaded() {
 async function loadServerData() {
     try {
         const [playersRes, prefsRes] = await Promise.all([
-            fetch('players.txt'),
-            fetch('preferences.txt')
+            fetch('../players.txt'),
+            fetch('../preferences.txt')
         ]);
         
         if (playersRes.ok) {

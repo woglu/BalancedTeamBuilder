@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balanced Team Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Balanced Team Builder</h1>
+    <div id="help-link">
+        <a href="../help.html" target="_blank">Help</a>
+    </div>
+    <section>
+        <h2>Load Players & Preferences</h2>
+        <input type="file" id="players-file" accept=".txt,.csv">
+        <input type="file" id="preferences-file" accept=".txt,.csv">
+        <button id="load-local">Load Local Files</button>
+        <button id="load-server">Load From Server</button>
+    </section>
+    <section>
+        <h2>Players</h2>
+        <form id="players-form"></form>
+    </section>
+    <section>
+        <h2>Select Players & Teams</h2>
+        <label for="num-teams">Number of Teams:</label>
+        <input type="number" id="num-teams" min="2" max="10" value="2">
+        <button id="generate-teams">Generate Balanced Teams</button>
+    </section>
+    <section>
+        <h2>Preferences</h2>
+        <div id="preferences-list"></div>
+    </section>
+    <section id="solutions-section" style="display:none;">
+        <h2>Balanced Teams</h2>
+        <div id="browsing-controls"></div>
+        <div id="solutions-container"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

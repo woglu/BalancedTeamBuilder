@@ -44,7 +44,7 @@ function renderPlayers() {
         div.className = 'player';
         div.innerHTML = `<input type="checkbox" id="chk_${i}" ${p.selected ? 'checked' : ''}>
             <strong>${p.name}</strong> &nbsp;
-            <label>Strength:</label> 
+            <label>S:</label> 
             <input type="number" min="1" max="100" id="str_${i}" value="${p.strength}" style="width:60px">
             &nbsp;<small>${p.comment||''}</small>`;
         form.appendChild(div);

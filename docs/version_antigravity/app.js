@@ -175,9 +175,9 @@ function renderPlayers() {
         card.innerHTML = `
             <input type="checkbox" id="p-${player.id}">
             <div class="player-info">
-                <span class="player-name">${player.name}</span>
+                <span class="player-name">${player.name} (${player.comment})</span>
                 <div class="player-strength-edit">
-                    <label>Strength:</label>
+                    <label>S:</label>
                     <input type="number" class="strength-input" value="${player.strength}" step="1" min="1" max="100">
                 </div>
             </div>

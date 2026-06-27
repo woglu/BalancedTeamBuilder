@@ -22,6 +22,6 @@ Player 1, Player 2, additidional strengh
 12. solutions where the sum of the strengths of a team differs by more then 10% from the average shall be suppressed.
 13. A Help button or link pointing to the existing help.html document shall be added to the startup page
 14. Also the content ot the loaded preferences.txt shall be presented and the strength valued from there shall be editable.
-15. There is no need to store the changed done to players.txt or preferences.txt.
+15. There is no need to store the changes done to players.txt or preferences.txt.
 16. The solutions should be ordered starting with those where the difference in the team strength (= sum of each player in the team) is the
  smallest one.

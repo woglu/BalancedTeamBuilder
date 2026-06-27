@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalancedTeam Builder App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header style="position: relative;">
+            <a href="../help.html" target="_blank" class="btn secondary-btn"
+                style="position: absolute; top: 0; right: 0; padding: 0.4rem 0.8rem; font-size: 0.85rem;">Help</a>
+            <h1>Balanced Team Builder</h1>
+            <p>Generate perfectly balanced teams based on player strengths and preferences.</p>
+        </header>
+        <main>
+            <section id="step-1" class="step active">
+                <h2>1. Load Data Files</h2>
+                <div class="file-inputs">
+                    <div class="file-drop-zone" id="players-drop-zone">
+                        <label for="players-file">Select Players.txt</label>
+                        <input type="file" id="players-file" accept=".txt">
+                        <span id="players-status">Waiting for file...</span>
+                    </div>
+                    <div class="file-drop-zone" id="prefs-drop-zone">
+                        <label for="prefs-file">Select Preferences.txt</label>
+                        <input type="file" id="prefs-file" accept=".txt">
+                        <span id="prefs-status">Waiting for file...</span>
+                    </div>
+                </div>
+                <button id="load-files-btn" class="btn primary-btn" disabled>Proceed to Selection</button>
+                <div class="demo-loader">
+                    <button id="load-server-btn" class="btn secondary-btn">Load Files from Web-Server</button>
+                </div>
+            </section>
+
+            <section id="step-2" class="step">
+                <h2>2. Select Players & Configure Teams</h2>
+
+                <div class="config-controls">
+                    <div class="input-group">
+                        <label for="nr-of-teams">Number of Teams:</label>
+                        <input type="number" id="nr-of-teams" min="1" max="10" value="2">
+                    </div>
+                    <div class="selection-stats">
+                        <span id="selected-count">0</span> Players Selected
+                    </div>
+                </div>
+
+                <div class="players-table-container" id="players-container">
+                    <!-- Players will be injected here -->
+                </div>
+
+                <div class="preferences-section">
+                    <h3>Preferences</h3>
+                    <div class="preferences-grid" id="preferences-container">
+                        <!-- Preferences will be injected here -->
+                    </div>
+                </div>
+
+                <div class="action-bar">
+                    <button id="back-to-files" class="btn secondary-btn">Back</button>
+                    <button id="generate-teams-btn" class="btn primary-btn" disabled>Generate Balanced Teams</button>
+                </div>
+            </section>
+
+            <section id="step-3" class="step">
+                <h2>3. Solutions</h2>
+                <div id="loader" class="loader hidden">
+                    <div class="spinner"></div>
+                    <p>Calculating optimal team balances...</p>
+                </div>
+                <div id="solutions-viewer" class="hidden">
+                    <div class="solution-header">
+                        <button id="prev-solution-btn" class="btn icon-btn" disabled>&larr;</button>
+                        <div class="solution-info">
+                            <h3 id="solution-title">Solution 1 of X</h3>
+                            <p id="solution-variance">Variance: 0</p>
+                        </div>
+                        <button id="next-solution-btn" class="btn icon-btn">&rarr;</button>
+                    </div>
+                    <div class="teams-container" id="teams-container">
+                        <!-- Teams will be injected here -->
+                    </div>
+                    <div class="action-bar">
+                        <button id="back-to-selection" class="btn secondary-btn">Adjust Selection</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

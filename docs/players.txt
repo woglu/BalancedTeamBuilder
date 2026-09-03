@@ -9,12 +9,12 @@ TR, 70,  Thomas R.
 WG, 70,  Wolfgang G.
 MM, 70,  Martin M.
 MN, 70,  Matthias N.
-KN, 70,  Konsti N.
+KN, 80,  Konsti N.
 HC, 65,  Helmut C.
 RT, 60,  Robert T.
 BS, 60,  Bernhard S.
 KH, 60,  Kathrin H.
-CG, 55,  Christian G.
+CG, 60,  Christian G.
 KB, 50,  Karlheinz B.
 MW, 50,  Matthias W.
 DK, 40,  Detlef K.
